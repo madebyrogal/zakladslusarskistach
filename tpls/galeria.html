@@ -1,0 +1,6 @@
+<div id="galleria">
+    {foreach from=$gallery item=val}
+        <img src="{$val.src}" alt="{$val.title}">
+        <p>{$val.description}</p>
+    {/foreach}    
+</div>

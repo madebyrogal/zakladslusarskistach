@@ -1,0 +1,16 @@
+<h1></h1>
+<div id="slideshow">
+    <div id="slideBack">
+        <ul id="nav">
+            <li id="prev"><a href="#"></a></li>
+            <li id="next"><a href="#"></a></li>
+        </ul>
+
+        <ul id="slides">
+            {foreach from=$slideShow item=val}
+               <li><img src="img/main/{$val}.jpg" alt="" /></li>
+            {/foreach}            
+        </ul>
+    </div>
+</div>
+

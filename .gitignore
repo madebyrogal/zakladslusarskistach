@@ -3,7 +3,9 @@
 
 # CACHE
 /tpls/compile/*
+!/tpls/compile/.gitkeep
 /tpls/cache/*
+!/tpls/cache/.gitkeep
 
 # OTHERS
 /nbproject

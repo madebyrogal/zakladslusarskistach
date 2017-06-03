@@ -1,0 +1,26 @@
+<div id="galeryList">
+    <br>
+    <a href="admin-galerii-dodaj.html" title="Dodaj nowe zdjęcie">Dodaj nowe zdjęcie</a>
+    <br><br>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>Zdjęcie</td>
+            <td>Tytuł zdjęcia</td>
+            <td>Opis zdjęcia</td>
+            <td id="opcjeTab">Opcje</td>
+        </tr>
+        {foreach from=$list item=val}
+        <tr>
+            <td>{$val.id}</td>
+            <td><img src="{$val.src}" alt="{$val.title}" width="120"></td>
+            <td>{$val.title}</td>
+            <td>{$val.description}</td>
+            <td>
+                <a href="admin-edytuj-galerie-{$val.id}.html" title="Edytuj" class="edit"></a>
+                <a href="admin-usun-galerie-{$val.id}.html" title="Usuń" class="del"></a>
+            </td>
+        </tr>
+        {/foreach}
+    </table>
+</div>

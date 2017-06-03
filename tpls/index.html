@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="Description" content="Najtańsze wózki widłowe na rynku, używane jak i nowe - SPRAWDZ !!! - {$desc}">
+        <meta name="Keywords" content="wózki widłowe, wozki widlowe, widlaki, wózki przemysłowe, wozki przemysłowe, podnośniki, podnosniki, truck">
+        <meta name="Author" content="Joanna Rogalska" lang="pl">
+        <meta name="Distribution" content="Global">
+        <meta name="Robots" content="index, follow">
+        <meta name="verify-v1" content="aF+m1B/XkHrkFnT7G3vBHYEOUAY/0yO0HbioSMunBDc=">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <link rel="stylesheet" type="text/css" href="./css/slideshow.css">
+        <link rel="icon" type="image/x-icon" href="./img/icon.ico">
+        <script type="text/javascript" src="./js/jquery.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>       
+        <script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <!-- GALLERY -->
+        {if $context=='galeria.html'}
+            <script type="text/javascript" src="./inc/gallery/jquery.min.js"></script>
+            <script type="text/javascript" src="./inc/gallery/galleria.js"></script>
+            <script type="text/javascript" src="./inc/gallery/plugins/galleria.flickr.js"></script>
+            <link rel="stylesheet" type="text/css" href="./inc/gallery/gallery.css">
+        {/if}
+        <!-- END OF GALLERY -->
+        <title>Zakład ślusarski Stach {$title}</title>
+    </head>
+    <body {if $context == 'home.html'}onLoad="simplePreload({foreach from=$slideShow item=val}'img/main/menu/{$val}.jpg', {/foreach})"{/if}>
+        <div id="root">
+            <div id="topPage">
+                <div id="data">
+                    <ul class="txt_12">
+                        <li class="sep"><b>Bezpośredni kontakt: +48 501 256 496</b></li>
+                        <li><b><a href="mailto:zakladslusarskistach@gmail.com?subject=Pytanie z www.zakladslusarskistach.pl">zakladslusarskistach@gmail.com</a></b></li>
+                    </ul>
+                </div>
+                <a href="home.html" id="logo"></a>
+            </div>
+            <div id="menu">
+                <ul>
+                    {foreach from=$menu item=val}
+                    <li class="distance"><b><a id="{$val.id}" href="{$val.addres}.html" class="{$val.class} txt_15" >{$val.title}</a></b></li>
+                    {/foreach }
+                </ul>      
+            </div>
+            <div class="clear"></div>
+            <div id="content">
+                <div id="{if $context=='galeria.html'}contextGallery{else}context{/if}">
+                    {include file=$context}
+                </div>
+            </div>
+            <div id="foot">
+                <p class="txt_11">Copyright © 2006-{$actYear} Zakład Ślusarski Stach. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+            
+    </body>
+</html>
