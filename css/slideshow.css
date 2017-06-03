@@ -1,0 +1,15 @@
+#container{width: 1095px; margin: 10px auto;}
+div#slideBack{position: relative; z-index: 4;width:1095px; height:370px; padding: 15px 0 0 12px; background-color: #FFFFFF;}
+div#slideshow {width: 941px; height: 360px; padding: 20px 10px 10px 10px;background: url('../images/border.png');
+               overflow: scroll; /* Allows the slides to be viewed using scrollbar if Javascript isn't available */
+	position: relative; z-index: 5;
+}
+div#slideshow ul#nav {display: none;list-style: none;position: absolute; top: 140px; z-index: 15;width:941px}
+
+div#slideshow ul#nav li#prev {float: left; margin: 0 0 0 0px;}
+div#slideshow ul#nav li#next {float: right; margin: 0 110px 0 0;}
+div#slideshow ul#nav li a {display: inline-block; width: 80px; height: 80px; text-indent: -9999px;}
+div#slideshow ul#nav li#prev a {background: url('../img/main/prev.png');}
+div#slideshow ul#nav li#next a {background: url('../img/main/next.png');}
+div#slideshow ul#slides {list-style: none; position: absolute;}
+div#slideshow ul#slides li {margin: 0 0 0px 0px;}

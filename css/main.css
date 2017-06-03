@@ -1,0 +1,65 @@
+/* CSS Document */
+*{margin:0 auto; font-family: Cambria; color: #7D7A6A; font-size: 12px;}
+/*------------------------------------- TAG ------------------------------------ */
+/*body, h1, ul, li {margin: 0; padding: 0; border: 0;}*/
+body{background:#000;}
+a {text-decoration: none;}
+a:hover{text-decoration: none; color: #FF6C00}
+.h1{font-size: 24px; color: #FF6C00}
+/*------------------------------ KONTENERY OBIEKTY------------------------------ */
+#root{display: block; min-height: 800px; width: 1200px ; background: url('../img/main/bg.jpg') no-repeat}
+#topPage{display: block;}
+#data ul {display: inline-block; float: right; margin-top: 15px; }
+ul li{text-decoration: none; list-style-image:none; list-style-type:none; display:inline;}
+ul li.sep{border-right:1px solid #7D7A6A; margin-right:5px; padding-right:5px;}
+#logo{display: inline-block; float:left; height: 31px; width: 366px; margin:52px 0 0 130px; background: url('../img/main/stach.png') no-repeat}
+#menu{display:block; float: right; clear:left; margin:50px 20px 20px 0;}
+#content{background: #fff; height: auto; width: 100%; margin-top: 15px;}
+#context{height: 411px; width: 1200px ;  background: url('../img/main/content.jpg') no-repeat}
+#contextGallery{height: 611px; width: 1200px ;  background: url('../img/main/content-gallery.jpg') no-repeat}
+#foot{margin:40px 0 0 0;}
+.clear{clear: both;}
+/* ---------------------------------- O NAS ------------------------------------ */
+#about{float:left; height: auto; margin:0px 0 0 132px; padding:21px 0 21px 0;}
+.cAbout{display: inline-block; float: left; width: 630px; margin-top: 39px;}
+.cAbout p{margin-top: 30px;}
+#leafAbout{float: left; height: 369px; width: 247px ; margin-left: 59px; background: url('../img/main/leaf.jpg') no-repeat}
+/* ---------------------------------- OFERTA ----------------------------------- */
+#oferta{float: left; height: 369px; width: 247px ; margin-left: 59px; background: url('../img/main/oferta.jpg') no-repeat}
+ul.list{padding-left:10px}
+ul.list li{display: block;line-height: 18px;font-size: 15px}
+/* --------------------------------- KONTAKT ----------------------------------- */
+.cContact{display: inline-block; float: left; width: 443px; margin-top: 27px;}
+.cContact p{margin-top: 27px;}
+.cRight{display: inline-block; float: left; width: 360px; margin: 75px 0 0 80px;}
+.row{display: block; float:left; width: 420px;;}
+.txtArea{height: 28px; width: 305px; border: none; padding: 5px 0 0 5px; background: url('../img/main/text_input.png') no-repeat}
+.area{min-height: 159px; width: 305px; border: none; padding: 5px 0 0 5px; background: url('../img/main/text_area.png') no-repeat}
+#wyslij{height: 33px; width: 89px; margin: 20px 0 0 220px; border: none; cursor: pointer; background: url('../img/main/button_send.png') no-repeat}
+.margin{margin-right: 13px;}
+.margin1{margin-right: 43px;}
+.margin2{margin-right: 25px; margin-top:35px;}
+/* ------------------------------- LOKALIZACJA --------------------------------- */
+#cLocal{display: inline-block; float: left; margin: 27px 0 0 50px;}
+#cLocalR{display: inline-block; float: left; margin: 27px 0 0 50px;width:450px}
+#cLocalR p{margin-top: 27px;}
+/* ----------------------------------- MENU ------------------------------------ */
+.txt_12{font-size: 12px;}
+.txt_15{font-size: 15px;}
+.grey_15{color: #373737; line-height: 20px; text-align: justify;}
+.orange{color: #FF6C00}
+.distance{padding-right:37px;}
+.active {color: #FF6C00}
+/* ------------------------------------ LINKI ---------------------------------- */
+
+/* --------------------------------- STOPKA ------------------------------------ */
+
+/* --------------------------------- ADMIN ------------------------------------- */
+#panelLogowania{margin:0 auto; width: 300px}
+#galeryList{text-align:center; width:1000px;height: auto;min-height: 300px}
+#galeryList table td{border:1px solid #7D7A6A}
+#opcjeTab{width: 60px}
+.edit{display: inline-block; width: 16px; height: 16px; background: url('../img/main/pencil.png')}
+.del{display: inline-block; width: 16px; height: 16px; background: url('../img/main/minus.png')}
+#AddGallery input{width:400px}
+#AddGallery textarea{width:400px; height: 100px}

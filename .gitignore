@@ -1,0 +1,11 @@
+# CONFIGS
+/cfg/config.ini
+
+# CACHE
+/tpls/compile/*
+/tpls/cache/*
+
+# OTHERS
+/nbproject
+/img/resources
+/date.txt
