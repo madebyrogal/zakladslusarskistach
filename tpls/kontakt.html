@@ -1,47 +1,89 @@
 <div id="about">
+
     <div class="cContact">
+
         <h1 class="h1">Kontakt</h1>
+
         <p class="txt_15">Pracujemy od poniedziałku do piątku w godzinach od 08:00 do 16:00.</p>
+
         <p>Możesz się z nami skontaktować na wiele sposobów. Umożliwiam kontakt za pomocą formularz, poczty e-mail, telefonicznie bądź osobiście</p>
+
         <p>Oto nasze dane teleadresowe:</p>
+
         <p class="txt_15">Zakład Ślusarski <span class="orange txt_15">Stach</span> <br>
+
            Aleja Wyzwolenia 4, <br>
-           Rzeszów, POLSKA
+
+           35-501 Rzeszów, POLSKA
+
         </p>
-        <p class="txt_15">
+
+        <p class="txt_15">tel. +48 887 510 101<br>			
             tel. +48 501 256 496<br>
-            tel. +48 889 394 709<br>
             e-mail: <a class="txt_15" href="mailto:zakladslusarskistach@gmail.com?subject=Pytanie z www.zakladslusarskistach.pl">zakladslusarskistach@gmail.com</a>
         </p>
+
     </div>
+
     <div class="cRight">
+
             {if $formularz == 1}
+
             <form action="kontakt.html" method="post" name="formularz" id="form">
+
                 <div class="row">
+
                     <label class="margin2">Imię i nazwisko:</label>
+
                     <input id="name" class="txtArea txt_15" name="name" type="text" size="31">
+
                 </div>
+
                 <div class="row">
+
                     <label class="margin1">Adres email:</label>
+
                     <input id="mail" class="txtArea txt_15" name="email" type="text" size="31">
+
                 </div>
+
                 <div class="row">
+
                     <label class="margin">Treść wiadomości:</label>
+
                     <textarea id="message" class="area txt_15" name="message" cols="" rows=""></textarea>
+
                 </div>
+
                 <button type="submit" name="wyslij" id="wyslij"></button>
+
                 
+
             </form>
+
             <div class="clear"></div>
+
             {else}
+
                 {if $mail == 1}
+
             <p class="info"><b>Wiadomość została wysłana poprawnie</b></p>
+
                 {else}
+
             <p class="info">
+
                 <b>Przepraszamy ale z przyczyn technicznych wiadomość nie została wysłana.</b><br>
+
                    Prosimy spróbować jeszcze raz.
+
             </p>
+
                 {/if}
+
             {/if}
+
     </div>
+
 </div>
+

@@ -9,15 +9,13 @@ a:hover{text-decoration: none; color: #FF6C00}
 /*------------------------------ KONTENERY OBIEKTY------------------------------ */
 #root{display: block; min-height: 800px; width: 1200px ; background: url('../img/main/bg.jpg') no-repeat}
 #topPage{display: block;}
-#data ul {display: inline-block; float: right; margin-top: 15px; }
+#data ul {display: inline-block; float: right; margin: 15px 135px 0 0; }
 ul li{text-decoration: none; list-style-image:none; list-style-type:none; display:inline;}
 ul li.sep{border-right:1px solid #7D7A6A; margin-right:5px; padding-right:5px;}
 #logo{display: inline-block; float:left; height: 31px; width: 366px; margin:52px 0 0 130px; background: url('../img/main/stach.png') no-repeat}
-#menu{display:block; float: right; clear:left; margin:50px 20px 20px 0;}
 #content{background: #fff; height: auto; width: 100%; margin-top: 15px;}
 #context{height: 411px; width: 1200px ;  background: url('../img/main/content.jpg') no-repeat}
 #contextGallery{height: 611px; width: 1200px ;  background: url('../img/main/content-gallery.jpg') no-repeat}
-#foot{margin:40px 0 0 0;}
 .clear{clear: both;}
 /* ---------------------------------- O NAS ------------------------------------ */
 #about{float:left; height: auto; margin:0px 0 0 132px; padding:21px 0 21px 0;}
@@ -26,7 +24,7 @@ ul li.sep{border-right:1px solid #7D7A6A; margin-right:5px; padding-right:5px;}
 #leafAbout{float: left; height: 369px; width: 247px ; margin-left: 59px; background: url('../img/main/leaf.jpg') no-repeat}
 /* ---------------------------------- OFERTA ----------------------------------- */
 #oferta{float: left; height: 369px; width: 247px ; margin-left: 59px; background: url('../img/main/oferta.jpg') no-repeat}
-ul.list{padding-left:10px}
+ul.list{padding-left:10px; margin-top: 5px;}
 ul.list li{display: block;line-height: 18px;font-size: 15px}
 /* --------------------------------- KONTAKT ----------------------------------- */
 .cContact{display: inline-block; float: left; width: 443px; margin-top: 27px;}
@@ -44,16 +42,15 @@ ul.list li{display: block;line-height: 18px;font-size: 15px}
 #cLocalR{display: inline-block; float: left; margin: 27px 0 0 50px;width:450px}
 #cLocalR p{margin-top: 27px;}
 /* ----------------------------------- MENU ------------------------------------ */
+#menu{display:block; float: right; clear:left; margin:50px 115px 20px 0;}
+#menu ul li{padding-right: 20px;}
 .txt_12{font-size: 12px;}
 .txt_15{font-size: 15px;}
 .grey_15{color: #373737; line-height: 20px; text-align: justify;}
 .orange{color: #FF6C00}
-.distance{padding-right:37px;}
 .active {color: #FF6C00}
-/* ------------------------------------ LINKI ---------------------------------- */
-
 /* --------------------------------- STOPKA ------------------------------------ */
-
+#foot{margin:40px 0 40px 135px;}
 /* --------------------------------- ADMIN ------------------------------------- */
 #panelLogowania{margin:0 auto; width: 300px}
 #galeryList{text-align:center; width:1000px;height: auto;min-height: 300px}

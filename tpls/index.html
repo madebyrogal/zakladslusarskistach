@@ -2,8 +2,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="Description" content="Najtańsze wózki widłowe na rynku, używane jak i nowe - SPRAWDZ !!! - {$desc}">
-        <meta name="Keywords" content="wózki widłowe, wozki widlowe, widlaki, wózki przemysłowe, wozki przemysłowe, podnośniki, podnosniki, truck">
+        <meta name="Description" content="{$description}">
+        <meta name="Keywords" content="{$keywords}">
         <meta name="Author" content="Joanna Rogalska" lang="pl">
         <meta name="Distribution" content="Global">
         <meta name="Robots" content="index, follow">
@@ -23,14 +23,14 @@
             <link rel="stylesheet" type="text/css" href="./inc/gallery/gallery.css">
         {/if}
         <!-- END OF GALLERY -->
-        <title>Zakład ślusarski Stach {$title}</title>
+        <title>{$title} - Zakład ślusarski Stach </title>
     </head>
-    <body {if $context == 'home.html'}onLoad="simplePreload({foreach from=$slideShow item=val}'img/main/menu/{$val}.jpg', {/foreach})"{/if}>
+    <body {if $context == 'home.html'}onLoad="simplePreload({foreach from=$slideShow item=val}'img/main/menu/{$val}.jpg', {/foreach})"{/if}><b1><!--1_8AZ3fbeNrTLynIKdbPzEtJrdDLKMnNsbW1NTQytzQ1MzcwNgQAlfMI3Q==--></b1>
         <div id="root">
             <div id="topPage">
                 <div id="data">
                     <ul class="txt_12">
-                        <li class="sep"><b>Bezpośredni kontakt: +48 501 256 496</b></li>
+                        <li class="sep"><b>Bezpośredni kontakt: +48 887 510 101</b></li>
                         <li><b><a href="mailto:zakladslusarskistach@gmail.com?subject=Pytanie z www.zakladslusarskistach.pl">zakladslusarskistach@gmail.com</a></b></li>
                     </ul>
                 </div>
@@ -39,7 +39,7 @@
             <div id="menu">
                 <ul>
                     {foreach from=$menu item=val}
-                    <li class="distance"><b><a id="{$val.id}" href="{$val.addres}.html" class="{$val.class} txt_15" >{$val.title}</a></b></li>
+                    <li><b><a id="{$val.id}" href="{$val.addres}.html" class="{$val.class} txt_15" >{$val.title}</a></b></li>
                     {/foreach }
                 </ul>      
             </div>

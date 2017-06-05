@@ -117,13 +117,13 @@ class Main {
             self::$smarty -> assign('context', $context[$contextpage]['context'].'.html');
         }
         self::$smarty->assign('actYear', date('Y'));
-        if($_GET['display'] != 'admin')
+        if(isset($_GET['display']) && $_GET['display'] != 'admin')
         {
-            self::$smarty -> display('index.html');
+            self::$smarty->display('admin/admin.html');
         }
         else
         {
-            self::$smarty->display('admin/admin.html');
+            self::$smarty -> display('index.html');
         }
     }
 

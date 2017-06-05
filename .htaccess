@@ -1,0 +1,36 @@
+AddType text/x-component .htc
+
+Options +FollowSymLinks
+RewriteEngine on
+
+ErrorDocument 403 /403.php
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php
+
+RewriteCond %{HTTP-HOST} ^www\.zakladslusarskistach\.pl\.pl$
+RewriteRule ^(.*)$ http://zakladslusarskistach.pl/$1 [R=301,L]
+
+#Strona startowa
+RewriteRule ^(index).html$ index.php?context=home&page=index [L]
+RewriteRule ^(home).html$ index.php?context=$1&page=home [L]
+
+#O nas
+RewriteRule ^(o-nas).html$ index.php?context=$1&page=o-nas [L]
+
+#Oferta
+RewriteRule ^(oferta).html$ index.php?context=$1&page=oferta [L]
+
+#Gdzie nas znaleźć
+RewriteRule ^(lokalizacja).html$ index.php?context=$1&page=lokalizacja [L]
+
+#Galeria
+RewriteRule ^(galeria).html$ index.php?context=$1&page=galeria [L]
+
+#Kontakt
+RewriteRule ^(kontakt).html$ index.php?context=$1&page=kontakt [L]
+
+#Administracja
+RewriteRule ^(admin).html$ index.php?context=$1&display=admin [L]
+RewriteRule ^(admin-galerii-dodaj).html$ index.php?context=admin&display=admin&act=add [L]
+RewriteRule ^admin-usun-galerie-([\d]+).html$ index.php?context=admin&display=admin&act=remove&id=$1 [L]
+RewriteRule ^admin-edytuj-galerie-([\d]+).html$ index.php?context=admin&display=admin&act=edit&id=$1 [L]
